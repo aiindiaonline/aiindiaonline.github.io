@@ -1,0 +1,324 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 300 21px Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #ddd;
+	background-color: #333;
+	border-top: 5px solid #fc0;
+	line-height: 1.5;
+}
+
+section {
+	padding: 20px 0;
+}
+
+h2 {
+	font-size: 2.2em;
+	font-weight: 300;
+	margin: 1em 0 0.5em 0;
+}
+
+h3 {
+	font-size: 23px;
+}
+
+a {
+	text-decoration: none;
+	color: #fc0;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #f90;
+}
+
+.container {
+	max-width: 1000px;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.speakers, .speakers li,
+.sponsors, .sponsors li  {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+
+.sponsors li {
+	display: inline-block;
+	vertical-align: middle;
+	width: 25%;
+}
+
+.speakers li {
+	display: inline-block;
+	vertical-align: top;
+	width: 250px;
+	margin: 10px 5px;
+
+}
+
+.button {
+  display: inline-block;
+  margin: 20px 2px 2px 2px;
+}
+
+
+
+.button > a {
+	padding: 10px 20px;
+  color: #fff;
+	background-color:#fc0;
+  border-radius: 5px;
+	color: #333;
+	font-weight: bold;
+}
+
+.center-text {
+	text-align:center;
+}
+
+.speakers div {
+	line-height: 0;
+}
+
+.speakers p {
+	font-size: 0.8em;
+}
+
+.speakers h3, .speakers p {
+	margin: 10px 0 0 0;
+}
+
+.speakers img {
+	border-radius: 2px;
+}
+
+.schedule {
+	list-style: none;
+	padding: 0;
+}
+
+.schedule .schedule_image {
+	float: left;
+	width: 100px;
+}
+
+.schedule .speaker-topic {
+	text-transform:capitalize;
+}
+
+.schedule .schedule_image img {
+	border: 1px solid #ccc;
+		border-radius: 100px;
+}
+
+.schedule li {
+	clear: left;
+	padding: 20px;
+	margin: 10px 0;
+	min-height: 100px;
+}
+
+.schedule li:nth-child(odd) {
+   background-color: #2d2d2d;
+}
+
+.schedule .schedule_description {
+	margin: 0 0 0 130px;
+}
+
+.schedule h3, .schedule p {
+	padding: 0;
+	margin: 0;
+}
+.speaker_name {
+	color: #fff;
+}
+
+header, footer {
+	text-align: center;
+	background: #222;
+	padding: 0 0 40px 0;
+}
+
+header h1 {
+	margin: 0;
+}
+
+header h1 img {
+	width: 100%;
+	max-width: 600px;
+}
+
+footer {
+	padding: 20px 0;
+	min-height: 50px;
+	line-height: 25px;
+}
+
+footer p {
+	color: #aaa;
+	font-size: 0.8em;
+	max-width: 30%;
+	text-align: left;
+	margin: 0;
+}
+
+footer .hosted-by {
+	float: right;
+}
+
+footer img {
+	vertical-align: middle;
+}
+
+.coming-soon {
+	text-align: center;
+	background: #222;
+	padding: 5px;
+	border-radius: 2px;
+}
+
+.share-button {
+  display: inline-block;
+  margin: 20px 1px;
+}
+
+.share-button.twitter-button {
+  position: relative;
+  top: 7px;
+}
+
+.proportional-iframe {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: #ccc;
+}
+
+.proportional-iframe-wrapper {
+  position: relative;
+}
+
+.proportional-iframe-wrapper .ratio {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+}
+
+.proportional-iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.col {
+	width: 50%;
+	float: left;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.twitter-feed iframe {
+	width: 80% !important;
+  display: block !important;
+  margin: 20px auto 0 auto !important;
+}
+
+@media (max-width: 840px) {
+	.sponsors li {
+		width: 50%;
+		margin: 20px 0;
+	}
+}
+
+@media (max-width: 680px) {
+	.sponsors li {
+		width: 100%;
+		margin: 20px 0;
+	}
+}
+
+
+.video-dialog {
+    position: fixed;
+    display: block;
+    background: rgba(0, 0, 0, 0.95);
+    left: -9999px;
+    right: -9000px;
+    text-align: center;
+    padding: 50px;
+}
+
+.video-dialog.open {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.video-dialog-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 60px;
+    line-height: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: #EEE;
+    text-decoration: none;
+}
+
+.video-dialog-close:hover {
+    color: #fff;
+}
+
+.video-dialog-close:active {
+    color: #aaa;
+}
+
+.video-dialog iframe {
+    margin: 0 auto;
+		max-height: 100%;
+		max-width: 100%;
+}
+
+.navigation {
+	list-style: none;
+	padding: 50px 0;
+	margin: 0;
+}
+
+.navigation li {
+	display: inline-block;
+}
+
+.navigation li a {
+	border: 2px solid #fc0;
+	padding: 6px;
+	margin: 0 10px;
+	border-radius: 10px;
+}
+
+.navigation li a:hover {
+	border-color: #f90;
+}
+
+.navigation li.active a {
+	border-color: #fff;
+	color: #fff;
+}
